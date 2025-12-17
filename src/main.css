@@ -1,0 +1,28 @@
+@import "./reset.css";
+@import "tailwindcss";
+
+@theme {
+  --spacing: 0.25rem;
+  --color-background: #f5f7f9;
+  --color-text: #1a1a1a;
+  --gradient-hero: linear-gradient(135deg,#2362EA,#6951E0);
+  --color-muted: rgb(244, 246, 248);
+  --color-muted-foreground: rgb(108, 112, 121);
+  --color-primary: #2362EA;
+  --color-primary-foreground: #FFFFFF;
+
+}
+
+.dark {
+  --color-background: #0f131a;
+  --color-text: #fafafa;
+}
+
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.bg-gradient-hero {
+  background-image: var(--gradient-hero);
+}

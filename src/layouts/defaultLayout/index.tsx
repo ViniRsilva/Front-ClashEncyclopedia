@@ -3,9 +3,9 @@ import { Navbar } from "../../components/ui/Navbar";
 
 export function DefaultLayout() {
   return (
-    <div className="p-4">
+    <div className="min-h-screen flex flex-col ">
       <Navbar />
-      <main>
+      <main className="p-4">
         <Outlet />
       </main>
     </div>
